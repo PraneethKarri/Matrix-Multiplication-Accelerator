@@ -1,7 +1,7 @@
 Matrix Multiplication Accelerator
 
 ## Description
-This project implements a pipelined Matrix Multiplication Accelerator using logic gates. It takes 4-bit binary inputs, requiring a total of 18 inputs to fill two matrices. The design employs parallel data processing, enhancing performance by executing multiple stages of the multiplication algorithm concurrently. The circuit is structured as Serial In, Serial Out (SI SO), with inputs and outputs stored in registers for efficient data handling. Through pipelining and parallel processing, this design optimizes resource utilization and minimizes processing time, offering insights into digital circuit design and matrix operations. The optimized design ensures swift computation by achieving the minimum number of clock cycles required, which is 27 cycles, to calculate and output the results.
+This project implements a Matrix Multiplication Accelerator using logic gates. It takes 4-bit binary inputs, requiring a total of 18 inputs to fill two matrices. The design employs parallel data processing, enhancing performance by executing multiple stages of the multiplication algorithm concurrently. The circuit is structured as Serial In, Serial Out (SI SO), with inputs and outputs stored in registers for efficient data handling. Through pipelining and parallel processing, this design optimizes resource utilization and minimizes processing time, offering insights into digital circuit design and matrix operations. The optimized design ensures swift computation by achieving the minimum number of clock cycles required, which is 9 cycles, to calculate and output the results.
 
 ## Specifications
 - **Designer**: Praneeth KSS
@@ -17,9 +17,16 @@ This project implements a pipelined Matrix Multiplication Accelerator using logi
 ## Module Description
 The `MATRIX_MULTIPLIER` module is designed to perform matrix multiplication for two 3x3 matrices with 4-bit binary values. Below is a brief overview of the components used in the module:
 
-- **Control Signals**: `ic`, `en`, `mr`
-- **Input Data**: `D` (4-bit), `os` (4-bit address)
-- **Output Data**: `Y` (10-bit)
+### Inputs and Outputs
+- **Inputs**:
+  - `clk_i`: Clock input
+  - `enable`: Enable signal
+  - `reset`: Reset signal
+  - `out_sel`: 4-bit address for output selection
+  - `data_in`: 4-bit data input
+
+- **Outputs**:
+  - `data_out`: 10-bit data output
 
 ### Internal Components
 - **Counters**: `Five_B_Counter`, `Custom_Counter_1010`
@@ -29,7 +36,6 @@ The `MATRIX_MULTIPLIER` module is designed to perform matrix multiplication for 
 - **Multipliers**: `Four_B_Multiplier`
 - **Adders**: `Three_X_8_Bit_Adder`
 - **Custom Logic Blocks**: `Custom_Logic_Block_1`, `Custom_Logic_Block_2`, `Custom_Logic_Block_3`
-
 ### Operation
 The module follows these steps for matrix multiplication:
 1. Load inputs into registers.
@@ -39,14 +45,8 @@ The module follows these steps for matrix multiplication:
 5. Store and output the final product based on the provided address.
 
 ## File List
-- `matrix_multiplier.v`: Main Verilog module for the matrix multiplier.
+- `MATRIX_MULTIPLIER.v`: Main Verilog module for the matrix multiplier.
 - `README.md`: Project description and usage guidelines.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-## Acknowledgements
-Special thanks to Praneeth KSS for designing and implementing the matrix multiplier.
 
 ---
 
