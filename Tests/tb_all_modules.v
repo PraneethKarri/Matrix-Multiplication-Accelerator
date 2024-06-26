@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module Test();
+module tb_all_modules();
 
 parameter dt = 30;
 
