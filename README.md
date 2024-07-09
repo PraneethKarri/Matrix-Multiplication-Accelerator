@@ -1,4 +1,4 @@
-### Matrix Multiplication Accelerator
+# Matrix Multiplication Accelerator
 
 ## Description
 This project implements a Matrix Multiplication Accelerator using logic gates. It takes 4-bit binary inputs, requiring a total of 18 inputs to fill two matrices. The design employs parallel data processing, enhancing performance by executing multiple stages of the multiplication algorithm concurrently. The circuit is structured as Serial In, Serial Out (SI SO), with inputs and outputs stored in registers for efficient data handling. Through pipelining and parallel processing, this design optimizes resource utilization and minimizes processing time, offering insights into digital circuit design and matrix operations. The optimized design ensures swift computation by achieving the minimum number of clock cycles required, which is 9 cycles, to calculate and output the results.
