@@ -6,7 +6,7 @@ This project implements a Matrix Multiplication Accelerator using logic gates. I
 ## Specifications
 - **Designer**: Praneeth KSS
 - **Input Terminals**: 11
-- **Output Terminals**: 10
+- **Output Terminals**: 11
 - **Clock Cycles Required**: 27 cycles
 - **Format**: Serial In, Serial Out (SI SO)
 
