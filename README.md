@@ -6,7 +6,7 @@ This project implements a Matrix Multiplication Accelerator using logic gates. I
 ## Specifications
 - **Designer**: Praneeth KSS
 - **Input Terminals**: 11
-- **Output Terminals**: 10
+- **Output Terminals**: 11
 - **Clock Cycles Required**: 27 cycles
 - **Format**: Serial In, Serial Out (SI SO)
 
@@ -27,6 +27,7 @@ The `MATRIX_MULTIPLIER` module is designed to perform matrix multiplication for 
 
 - **Outputs**:
   - `data_out`: 10-bit data output
+  - `done`: Single-bit status output
 
 ### Internal Components
 - **Counters**: `Five_B_Counter`, `Custom_Counter_1010`
@@ -47,6 +48,7 @@ The module follows these steps for matrix multiplication:
 
 ## File List
 - `MATRIX_MULTIPLIER.v`: Main Verilog module for the matrix multiplier.
+- `tb_all_modules.v`: Testbench for all the modules.
 - `README.md`: Project description and usage guidelines.
 
 ## Schematic
