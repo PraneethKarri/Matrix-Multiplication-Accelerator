@@ -27,6 +27,7 @@ The `MATRIX_MULTIPLIER` module is designed to perform matrix multiplication for 
 
 - **Outputs**:
   - `data_out`: 10-bit data output
+  - `done`: Single-bit status output
 
 ### Internal Components
 - **Counters**: `Five_B_Counter`, `Custom_Counter_1010`
