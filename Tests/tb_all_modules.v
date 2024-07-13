@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 
-module tb_all_modules();
+module Test();
 
 parameter dt = 30;
 
 ////////////////// Code for CLOCK //////////////////
 
-// parameter ct = dt;
+parameter ct = dt;
 //reg clk;
 
 //initial
@@ -279,11 +279,12 @@ parameter dt = 30;
 reg [3:0] i,os;
 reg ic,en,mr;
 wire [9:0] matrix;
+wire done;
 
 parameter ict = 0.5;
 parameter oadt = 2;
 
-MATRIX_MULTIPLIER A1(matrix,i,ic,os,en,mr);
+MATRIX_MULTIPLIER A1(matrix,done,i,ic,os,en,mr);
 
 initial begin
 $monitor($time, "  Output Matrix Value are  M = %0d", matrix  );
@@ -334,7 +335,6 @@ ic = 1;#ict ic= 0;
 end 
 
 endmodule
-
 
 
 
