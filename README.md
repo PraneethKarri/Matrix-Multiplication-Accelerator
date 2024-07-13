@@ -36,6 +36,7 @@ The `MATRIX_MULTIPLIER` module is designed to perform matrix multiplication for 
 - **Multipliers**: `Four_B_Multiplier`
 - **Adders**: `Three_X_8_Bit_Adder`
 - **Custom Logic Blocks**: `Custom_Logic_Block_1`, `Custom_Logic_Block_2`, `Custom_Logic_Block_3`
+
 ### Operation
 The module follows these steps for matrix multiplication:
 1. Load inputs into registers.
@@ -47,6 +48,9 @@ The module follows these steps for matrix multiplication:
 ## File List
 - `MATRIX_MULTIPLIER.v`: Main Verilog module for the matrix multiplier.
 - `README.md`: Project description and usage guidelines.
+
+## Schematic
+![Schematic](Codes/schematic.png)
 
 ---
 
