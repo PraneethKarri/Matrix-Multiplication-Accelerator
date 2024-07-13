@@ -48,6 +48,7 @@ The module follows these steps for matrix multiplication:
 
 ## File List
 - `MATRIX_MULTIPLIER.v`: Main Verilog module for the matrix multiplier.
+- `tb_all_modules.v`: Testbench for all the modules.
 - `README.md`: Project description and usage guidelines.
 
 ## Schematic
